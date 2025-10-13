@@ -1,5 +1,5 @@
 # ☀️ Forecasting Impactful Solar Flares using Time-Series
-## Project Executive Summary: Mitigating Space Weather Threats
+## Project Summary: Mitigating Space Weather Threats
 This project demonstrates a rigorous time-series analysis solution for forecasting three critical solar flare attributes: **X-Ray Flux**, **UV Fluorescence**, and **Flare Duration**. Using the **SWAN-SF (Solar Wind Analysis System - Solar Flares)** dataset, we leverage advanced statistical models to provide predictive insights crucial for mitigating the impact of space weather on terrestrial and space-based infrastructure (e.g., power grids, satellites, GPS).
 
 The core innovation is the systematic comparison of **ARIMA (Univariate)** and **VAR (Multivariate)** models, proving the superiority of the multivariate approach in capturing the interdependent dynamics of solar phenomena.
