@@ -48,10 +48,19 @@ The project workflow moves from raw data ingestion to a structured, model-compar
 
 - **Preprocessing:** Normalize data, index time series, and check stationarity (ACF).
   - Implemented Min-Max Normalization to standardize the input feature set (over 30 variables) and feature engineered three variables namely `XRAY`, `Fluorescence`, and `Flare-time`.
+
+    <img width="1920" height="960" alt="image" src="https://github.com/user-attachments/assets/776eb941-7a40-405e-8cb3-e6df7b7bc822" />
+
   - 📊 Min-Max Normalization Formula: $x' = \frac{x - x_{\text{min}}}{x_{\text{max}} - x_{\text{min}}}$. It scales a feature $x$ to a fixed range $[0, 1]$:
 
 - **Model Fitting:** Execute two parallel modeling efforts (ARIMA and VAR) on the three target variables.
   - Employed ARIMA as a univariate baseline and VAR as the primary multivariate modeling technique to capture the inherent interdependence between solar flare attributes.
+ 
+  <img width="1920" height="960" alt="image" src="https://github.com/user-attachments/assets/3cec7931-363c-4b93-9344-677b1025414c" />
+  
+  <img width="1920" height="960" alt="image" src="https://github.com/user-attachments/assets/1244304a-b7b4-46a7-a79c-9762ec66425a" />
+  
+  <img width="1920" height="960" alt="image" src="https://github.com/user-attachments/assets/c8c20704-b64f-4f6b-8189-e2a934f420d1" />
 
 - **Diagnostics & Selection:** Compare forecast accuracy using RMSE and STD to determine the superior model for each metric.
   - The modeling process confirmed the initial hypothesis of non-stationarity across all target time series, necessitating differencing for model fitting.  Diagnostic plots, such as the Autocorrelation Function (ACF), provided statistical validation for the long-term dependency structure.
