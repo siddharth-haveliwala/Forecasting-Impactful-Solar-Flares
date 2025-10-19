@@ -1,4 +1,4 @@
-# ☀️ Forecasting Impactful Solar Flares using Time-Series
+# Forecasting Impactful Solar Flares using Time-Series
 ## Project Summary: Mitigating Space Weather Threats
 
 Solar flares, characterized by sudden and intense energy bursts from the Sun’s surface, pose significant risks when they are powerful enough to interact with Earth's atmosphere. These phenomena are known to cause:
@@ -13,7 +13,7 @@ This project demonstrates a rigorous time-series analysis solution for forecasti
 
 The core innovation is the systematic comparison of **ARIMA (Univariate)** and **VAR (Multivariate)** models, proving the superiority of the multivariate approach in capturing the interdependent dynamics of solar phenomena.
 
-## 🌟 Key Technical Features
+## Key Technical Features
 - **Multivariate Time-Series Modeling (VAR):** Utilizes the Vector AutoRegressive model to accurately capture the dynamic, interdependent relationships between multiple solar wind predictors and the flare characteristics.
 
 - **Model Comparison Framework:** Rigorous diagnostic and validation using RMSE and Standard Deviation to statistically select the optimal forecasting technique across three target variables.
@@ -22,7 +22,7 @@ The core innovation is the systematic comparison of **ARIMA (Univariate)** and *
 
 - **Reproducible Research & Reporting:** All statistical modeling is executed in R Studio and documented using Quarto for generating dynamic, professional reports and presentations.
 
-## 💻 Technology Stack & Data Sources
+## Technology Stack & Data Sources
 
 | Category | Component | Details |
 |-------|------------|---------|
@@ -32,7 +32,7 @@ The core innovation is the systematic comparison of **ARIMA (Univariate)** and *
 | **Data Source** | SWAN-SF Dataset | NASA provided satellite-collected solar wind and flare metrics. |
 | **Data Format** | .csv | Original and pre-processed (normalized) time-series data. |
 
-## 💡 Use Cases and Real-World Impact
+## Use Cases and Real-World Impact
 The predictive models developed here have direct, high-value applications:
 
 - **Critical Infrastructure Protection:** Providing advance warning to power grid operators to mitigate Geomagnetically Induced Currents (GICs) and prevent blackouts caused by strong X-ray flux.
@@ -41,7 +41,7 @@ The predictive models developed here have direct, high-value applications:
 
 - **Aviation and Communication:** Improving the reliability of GPS, radio signals, and long-haul flight path planning by anticipating periods of ionospheric disruption caused by solar flares.
 
-## 📐 Conceptual Modeling Architecture
+## Conceptual Modeling Architecture
 The project workflow moves from raw data ingestion to a structured, model-comparison phase.
 
 - **Data Ingestion:** Load the raw, high-dimensional SWAN-SF data.
@@ -75,7 +75,7 @@ The project workflow moves from raw data ingestion to a structured, model-compar
 
 - **Forecasting:** Generate future predictions for operational use.
   
-## 🚀 Repository Contents
+## Repository Contents
 `/`: Contains the primary documentation files (README.md, MODEL_ARCHITECTURE.md).
 
 `/R_SCRIPTS`: Contains Final_code.R (the main execution script).
@@ -84,7 +84,7 @@ The project workflow moves from raw data ingestion to a structured, model-compar
 
 `/DOCS`: Contains the Quarto report files (project.qmd, project.html) and the presentation (08-statespace.qmd).
 
-## 💡 Strategic Impact and Conclusion
+## Strategic Impact and Conclusion
 The successful implementation and validation of the VAR model for flare duration forecasting represents a significant advance in reliable space weather prediction.
 
 - **Operational Readiness:** The system provides actionable intelligence by offering accurate, near-term forecasts for the most volatile and critical parameter: the event's duration.
